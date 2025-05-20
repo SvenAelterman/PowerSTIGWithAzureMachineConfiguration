@@ -1,0 +1,2237 @@
+/*
+@TargetNode='localhost'
+@GeneratedBy=svaelter
+@GenerationDate=05/20/2025 09:38:15
+@GenerationHost=SVAELTER-SLS2
+*/
+
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile1ref
+{
+ResourceID = "[RegistryPolicyFile][V-223015][medium][SRG-APP-000516]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "1"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "WarnOnBadCertRecving";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile2ref
+{
+ResourceID = "[RegistryPolicyFile][V-223017][medium][SRG-APP-000209]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "3"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "1001";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile3ref
+{
+ResourceID = "[RegistryPolicyFile][V-223018][medium][SRG-APP-000209]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "3"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "1004";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile4ref
+{
+ResourceID = "[RegistryPolicyFile][V-223019][medium][SRG-APP-000210]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "3"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "1201";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile5ref
+{
+ResourceID = "[RegistryPolicyFile][V-223020][medium][SRG-APP-000141]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "0"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "1C00";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile6ref
+{
+ResourceID = "[RegistryPolicyFile][V-223021][medium][SRG-APP-000039]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "3"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "1406";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile7ref
+{
+ResourceID = "[RegistryPolicyFile][V-223022][medium][SRG-APP-000141]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "3"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "1802";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile8ref
+{
+ResourceID = "[RegistryPolicyFile][V-223023][medium][SRG-APP-000141]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "3"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "1804";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile9ref
+{
+ResourceID = "[RegistryPolicyFile][V-223024][medium][SRG-APP-000039]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "3"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "1607";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile10ref
+{
+ResourceID = "[RegistryPolicyFile][V-223025][medium][SRG-APP-000231]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "3"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "1606";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile11ref
+{
+ResourceID = "[RegistryPolicyFile][V-223026][medium][SRG-APP-000141]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "3"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "1407";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile12ref
+{
+ResourceID = "[RegistryPolicyFile][V-223027][medium][SRG-APP-000219]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "65536"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "1A00";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile13ref
+{
+ResourceID = "[RegistryPolicyFile][V-223028][medium][SRG-APP-000141]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "65536"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\1";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "1C00";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile14ref
+{
+ResourceID = "[RegistryPolicyFile][V-223029][medium][SRG-APP-000207]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "0"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\1";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "270C";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile15ref
+{
+ResourceID = "[RegistryPolicyFile][V-223030][medium][SRG-APP-000141]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "65536"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\2";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "1C00";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile16ref
+{
+ResourceID = "[RegistryPolicyFile][V-223031][medium][SRG-APP-000207]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "0"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\2";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "270C";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile17ref
+{
+ResourceID = "[RegistryPolicyFile][V-223032][medium][SRG-APP-000039]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "3"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "2708";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile18ref
+{
+ResourceID = "[RegistryPolicyFile][V-223033][medium][SRG-APP-000039]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "3"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "2709";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile19ref
+{
+ResourceID = "[RegistryPolicyFile][V-223034][medium][SRG-APP-000112]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "1"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_RESTRICT_ACTIVEXINSTALL";
+ TargetType = "ComputerConfiguration";
+ ValueType = "String";
+ ModuleVersion = "1.3.1";
+ ValueName = "explorer.exe";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile20ref
+{
+ResourceID = "[RegistryPolicyFile][V-223035][medium][SRG-APP-000112]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "1"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_RESTRICT_ACTIVEXINSTALL";
+ TargetType = "ComputerConfiguration";
+ ValueType = "String";
+ ModuleVersion = "1.3.1";
+ ValueName = "iexplore.exe";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile21ref
+{
+ResourceID = "[RegistryPolicyFile][V-223036][medium][SRG-APP-000039]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "3"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "2708";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile22ref
+{
+ResourceID = "[RegistryPolicyFile][V-223037][medium][SRG-APP-000207]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "0"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "270C";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile23ref
+{
+ResourceID = "[RegistryPolicyFile][V-223038][medium][SRG-APP-000207]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "0"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "270C";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile24ref
+{
+ResourceID = "[RegistryPolicyFile][V-223039][medium][SRG-APP-000278]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "1"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Internet Explorer\\PhishingFilter";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "PreventOverride";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile25ref
+{
+ResourceID = "[RegistryPolicyFile][V-223040][medium][SRG-APP-000209]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "1"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Internet Explorer\\PhishingFilter";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "PreventOverrideAppRepUnknown";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile26ref
+{
+ResourceID = "[RegistryPolicyFile][V-223041][medium][SRG-APP-000210]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "1"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Internet Explorer\\Security\\ActiveX";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "BlockNonAdminActiveXInstall";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile27ref
+{
+ResourceID = "[RegistryPolicyFile][V-223042][medium][SRG-APP-000427]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "1"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "PreventIgnoreCertErrors";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile28ref
+{
+ResourceID = "[RegistryPolicyFile][V-223043][medium][SRG-APP-000278]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "0"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "2301";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile29ref
+{
+ResourceID = "[RegistryPolicyFile][V-223044][medium][SRG-APP-000278]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "0"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "2301";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile30ref
+{
+ResourceID = "[RegistryPolicyFile][V-223045][medium][SRG-APP-000210]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "3"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\1";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "1201";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile31ref
+{
+ResourceID = "[RegistryPolicyFile][V-223046][medium][SRG-APP-000210]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "3"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\2";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "1201";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile32ref
+{
+ResourceID = "[RegistryPolicyFile][V-223048][medium][SRG-APP-000141]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "0"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\Ext";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "RunThisTimeEnabled";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile33ref
+{
+ResourceID = "[RegistryPolicyFile][V-223049][medium][SRG-APP-000141]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "1"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\Ext";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "VersionCheckEnabled";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile34ref
+{
+ResourceID = "[RegistryPolicyFile][V-223050][medium][SRG-APP-000141]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "3"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "120c";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile35ref
+{
+ResourceID = "[RegistryPolicyFile][V-223051][medium][SRG-APP-000209]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "3"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "1001";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile36ref
+{
+ResourceID = "[RegistryPolicyFile][V-223052][medium][SRG-APP-000141]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "3"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "120c";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile37ref
+{
+ResourceID = "[RegistryPolicyFile][V-223053][medium][SRG-APP-000209]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "3"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "140C";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile38ref
+{
+ResourceID = "[RegistryPolicyFile][V-223054][medium][SRG-APP-000209]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "3"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "1004";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile39ref
+{
+ResourceID = "[RegistryPolicyFile][V-223055][medium][SRG-APP-000209]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "3"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "140C";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile40ref
+{
+ResourceID = "[RegistryPolicyFile][V-223056][low][SRG-APP-000266]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "1"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "SOFTWARE\\Policies\\Microsoft\\Internet Explorer\\IEDevTools";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "Disabled";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile41ref
+{
+ResourceID = "[RegistryPolicyFile][V-223057][medium][SRG-APP-000210]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "3"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "1201";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile42ref
+{
+ResourceID = "[RegistryPolicyFile][V-223058][medium][SRG-APP-000516]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "3"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "1200";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile43ref
+{
+ResourceID = "[RegistryPolicyFile][V-223059][medium][SRG-APP-000210]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "3"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "1405";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile44ref
+{
+ResourceID = "[RegistryPolicyFile][V-223060][medium][SRG-APP-000141]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "3"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "1803";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile45ref
+{
+ResourceID = "[RegistryPolicyFile][V-223061][medium][SRG-APP-000141]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "0"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "1C00";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile46ref
+{
+ResourceID = "[RegistryPolicyFile][V-223062][medium][SRG-APP-000039]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "3"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "1406";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile47ref
+{
+ResourceID = "[RegistryPolicyFile][V-223063][medium][SRG-APP-000516]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "3"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "1608";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile48ref
+{
+ResourceID = "[RegistryPolicyFile][V-223064][medium][SRG-APP-000141]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "3"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "1802";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile49ref
+{
+ResourceID = "[RegistryPolicyFile][V-223065][medium][SRG-APP-000141]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "3"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "1804";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile50ref
+{
+ResourceID = "[RegistryPolicyFile][V-223066][medium][SRG-APP-000039]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "3"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "1607";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile51ref
+{
+ResourceID = "[RegistryPolicyFile][V-223067][medium][SRG-APP-000231]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "3"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "1606";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile52ref
+{
+ResourceID = "[RegistryPolicyFile][V-223068][medium][SRG-APP-000141]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "3"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "1400";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile53ref
+{
+ResourceID = "[RegistryPolicyFile][V-223069][medium][SRG-APP-000141]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "3"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "1407";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile54ref
+{
+ResourceID = "[RegistryPolicyFile][V-223070][medium][SRG-APP-000219]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "196608"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "1A00";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile55ref
+{
+ResourceID = "[RegistryPolicyFile][V-223071.a][medium][SRG-APP-000089]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "1"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Internet Explorer\\Control Panel";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "History";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile56ref
+{
+ResourceID = "[RegistryPolicyFile][V-223071.b][medium][SRG-APP-000089]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "40"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Url History";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "DaysToKeep";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile57ref
+{
+ResourceID = "[RegistryPolicyFile][V-223072][medium][SRG-APP-000141]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "1"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "Security_zones_map_edit";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile58ref
+{
+ResourceID = "[RegistryPolicyFile][V-223073][medium][SRG-APP-000516]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "1"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "Security_options_edit";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile59ref
+{
+ResourceID = "[RegistryPolicyFile][V-223074][medium][SRG-APP-000516]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "1"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "Security_HKLM_only";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile60ref
+{
+ResourceID = "[RegistryPolicyFile][V-223075][medium][SRG-APP-000516]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "0"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Internet Explorer\\Security";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "DisableSecuritySettingsCheck";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile61ref
+{
+ResourceID = "[RegistryPolicyFile][V-223076][medium][SRG-APP-000210]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "0"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Internet Explorer\\Download";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "RunInvalidSignatures";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile62ref
+{
+ResourceID = "[RegistryPolicyFile][V-223077][medium][SRG-APP-000233]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "1"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Internet Explorer\\Main";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "Isolation64Bit";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile63ref
+{
+ResourceID = "[RegistryPolicyFile][V-223078][low][SRG-APP-000175]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "1"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "CertificateRevocation";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile64ref
+{
+ResourceID = "[RegistryPolicyFile][V-223079][medium][SRG-APP-000131]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "yes"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Internet Explorer\\Download";
+ TargetType = "ComputerConfiguration";
+ ValueType = "String";
+ ModuleVersion = "1.3.1";
+ ValueName = "CheckExeSignatures";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile65ref
+{
+ResourceID = "[RegistryPolicyFile][V-223080][medium][SRG-APP-000516]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "0"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\ZoneMap";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "UNCAsIntranet";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile66ref
+{
+ResourceID = "[RegistryPolicyFile][V-223081][medium][SRG-APP-000141]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "3"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "2102";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile67ref
+{
+ResourceID = "[RegistryPolicyFile][V-223082][medium][SRG-APP-000141]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "3"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "2102";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile68ref
+{
+ResourceID = "[RegistryPolicyFile][V-223083][medium][SRG-APP-000141]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "3"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "1209";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile69ref
+{
+ResourceID = "[RegistryPolicyFile][V-223084][medium][SRG-APP-000141]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "3"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "2200";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile70ref
+{
+ResourceID = "[RegistryPolicyFile][V-223085][medium][SRG-APP-000141]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "0"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\0";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "1C00";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile71ref
+{
+ResourceID = "[RegistryPolicyFile][V-223086][medium][SRG-APP-000207]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "0"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\0";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "270C";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile72ref
+{
+ResourceID = "[RegistryPolicyFile][V-223087][medium][SRG-APP-000141]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "0"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Lockdown_Zones\\0";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "1C00";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile73ref
+{
+ResourceID = "[RegistryPolicyFile][V-223088][medium][SRG-APP-000141]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "0"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Lockdown_Zones\\1";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "1C00";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile74ref
+{
+ResourceID = "[RegistryPolicyFile][V-223089][medium][SRG-APP-000141]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "0"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Lockdown_Zones\\2";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "1C00";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile75ref
+{
+ResourceID = "[RegistryPolicyFile][V-223090][medium][SRG-APP-000141]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "0"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Lockdown_Zones\\4";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "1C00";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile76ref
+{
+ResourceID = "[RegistryPolicyFile][V-223091][medium][SRG-APP-000516]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "3"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "2402";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile77ref
+{
+ResourceID = "[RegistryPolicyFile][V-223092][medium][SRG-APP-000516]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "3"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "2402";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile78ref
+{
+ResourceID = "[RegistryPolicyFile][V-223093][medium][SRG-APP-000233]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "0"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "2500";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile79ref
+{
+ResourceID = "[RegistryPolicyFile][V-223094][medium][SRG-APP-000233]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "0"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "2500";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile80ref
+{
+ResourceID = "[RegistryPolicyFile][V-223095][medium][SRG-APP-000141]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "0"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "1809";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile81ref
+{
+ResourceID = "[RegistryPolicyFile][V-223096][medium][SRG-APP-000141]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "0"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "1809";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile82ref
+{
+ResourceID = "[RegistryPolicyFile][V-223097][medium][SRG-APP-000039]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "3"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "2101";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile83ref
+{
+ResourceID = "[RegistryPolicyFile][V-223098][medium][SRG-APP-000039]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "3"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "2101";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile84ref
+{
+ResourceID = "[RegistryPolicyFile][V-223099][medium][SRG-APP-000141]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "3"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "2000";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile85ref
+{
+ResourceID = "[RegistryPolicyFile][V-223100][medium][SRG-APP-000141]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "3"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "2200";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile86ref
+{
+ResourceID = "[RegistryPolicyFile][V-223101][medium][SRG-APP-000206]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "1"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_MIME_HANDLING";
+ TargetType = "ComputerConfiguration";
+ ValueType = "String";
+ ModuleVersion = "1.3.1";
+ ValueName = "(Reserved)";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile87ref
+{
+ResourceID = "[RegistryPolicyFile][V-223102][medium][SRG-APP-000206]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "1"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_MIME_HANDLING";
+ TargetType = "ComputerConfiguration";
+ ValueType = "String";
+ ModuleVersion = "1.3.1";
+ ValueName = "explorer.exe";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile88ref
+{
+ResourceID = "[RegistryPolicyFile][V-223103][medium][SRG-APP-000206]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "1"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_MIME_HANDLING";
+ TargetType = "ComputerConfiguration";
+ ValueType = "String";
+ ModuleVersion = "1.3.1";
+ ValueName = "iexplore.exe";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile89ref
+{
+ResourceID = "[RegistryPolicyFile][V-223104][medium][SRG-APP-000206]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "1"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_MIME_SNIFFING";
+ TargetType = "ComputerConfiguration";
+ ValueType = "String";
+ ModuleVersion = "1.3.1";
+ ValueName = "(Reserved)";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile90ref
+{
+ResourceID = "[RegistryPolicyFile][V-223105][medium][SRG-APP-000206]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "1"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_MIME_SNIFFING";
+ TargetType = "ComputerConfiguration";
+ ValueType = "String";
+ ModuleVersion = "1.3.1";
+ ValueName = "explorer.exe";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile91ref
+{
+ResourceID = "[RegistryPolicyFile][V-223106][medium][SRG-APP-000206]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "1"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_MIME_SNIFFING";
+ TargetType = "ComputerConfiguration";
+ ValueType = "String";
+ ModuleVersion = "1.3.1";
+ ValueName = "iexplore.exe";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile92ref
+{
+ResourceID = "[RegistryPolicyFile][V-223107][medium][SRG-APP-000141]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "1"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_DISABLE_MK_PROTOCOL";
+ TargetType = "ComputerConfiguration";
+ ValueType = "String";
+ ModuleVersion = "1.3.1";
+ ValueName = "(Reserved)";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile93ref
+{
+ResourceID = "[RegistryPolicyFile][V-223108][medium][SRG-APP-000141]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "1"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_DISABLE_MK_PROTOCOL";
+ TargetType = "ComputerConfiguration";
+ ValueType = "String";
+ ModuleVersion = "1.3.1";
+ ValueName = "explorer.exe";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile94ref
+{
+ResourceID = "[RegistryPolicyFile][V-223109][medium][SRG-APP-000141]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "1"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_DISABLE_MK_PROTOCOL";
+ TargetType = "ComputerConfiguration";
+ ValueType = "String";
+ ModuleVersion = "1.3.1";
+ ValueName = "iexplore.exe";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile95ref
+{
+ResourceID = "[RegistryPolicyFile][V-223110][medium][SRG-APP-000233]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "1"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_ZONE_ELEVATION";
+ TargetType = "ComputerConfiguration";
+ ValueType = "String";
+ ModuleVersion = "1.3.1";
+ ValueName = "(Reserved)";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile96ref
+{
+ResourceID = "[RegistryPolicyFile][V-223111][medium][SRG-APP-000233]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "1"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_ZONE_ELEVATION";
+ TargetType = "ComputerConfiguration";
+ ValueType = "String";
+ ModuleVersion = "1.3.1";
+ ValueName = "explorer.exe";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile97ref
+{
+ResourceID = "[RegistryPolicyFile][V-223112][medium][SRG-APP-000233]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "1"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_ZONE_ELEVATION";
+ TargetType = "ComputerConfiguration";
+ ValueType = "String";
+ ModuleVersion = "1.3.1";
+ ValueName = "iexplore.exe";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile98ref
+{
+ResourceID = "[RegistryPolicyFile][V-223113][medium][SRG-APP-000141]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "1"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_RESTRICT_FILEDOWNLOAD";
+ TargetType = "ComputerConfiguration";
+ ValueType = "String";
+ ModuleVersion = "1.3.1";
+ ValueName = "(Reserved)";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile99ref
+{
+ResourceID = "[RegistryPolicyFile][V-223114][medium][SRG-APP-000141]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "1"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_RESTRICT_FILEDOWNLOAD";
+ TargetType = "ComputerConfiguration";
+ ValueType = "String";
+ ModuleVersion = "1.3.1";
+ ValueName = "explorer.exe";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile100ref
+{
+ResourceID = "[RegistryPolicyFile][V-223115][medium][SRG-APP-000141]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "1"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_RESTRICT_FILEDOWNLOAD";
+ TargetType = "ComputerConfiguration";
+ ValueType = "String";
+ ModuleVersion = "1.3.1";
+ ValueName = "iexplore.exe";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile101ref
+{
+ResourceID = "[RegistryPolicyFile][V-223116][medium][SRG-APP-000141]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "1"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_WINDOW_RESTRICTIONS";
+ TargetType = "ComputerConfiguration";
+ ValueType = "String";
+ ModuleVersion = "1.3.1";
+ ValueName = "(Reserved)";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile102ref
+{
+ResourceID = "[RegistryPolicyFile][V-223117][medium][SRG-APP-000141]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "1"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_WINDOW_RESTRICTIONS";
+ TargetType = "ComputerConfiguration";
+ ValueType = "String";
+ ModuleVersion = "1.3.1";
+ ValueName = "explorer.exe";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile103ref
+{
+ResourceID = "[RegistryPolicyFile][V-223118][medium][SRG-APP-000141]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "1"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_WINDOW_RESTRICTIONS";
+ TargetType = "ComputerConfiguration";
+ ValueType = "String";
+ ModuleVersion = "1.3.1";
+ ValueName = "iexplore.exe";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile104ref
+{
+ResourceID = "[RegistryPolicyFile][V-223119][medium][SRG-APP-000516]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "3"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "2004";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile105ref
+{
+ResourceID = "[RegistryPolicyFile][V-223120][medium][SRG-APP-000516]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "3"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "2001";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile106ref
+{
+ResourceID = "[RegistryPolicyFile][V-223121][medium][SRG-APP-000141]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "3"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "1402";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile107ref
+{
+ResourceID = "[RegistryPolicyFile][V-223122][medium][SRG-APP-000141]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "no"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Internet Explorer\\Main";
+ TargetType = "UserConfiguration";
+ ValueType = "String";
+ ModuleVersion = "1.3.1";
+ ValueName = "Use FormSuggest";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile108ref
+{
+ResourceID = "[RegistryPolicyFile][V-223123][medium][SRG-APP-000141]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "1"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Internet Explorer\\Restrictions";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "NoCrashDetection";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile109ref
+{
+ResourceID = "[RegistryPolicyFile][V-223124.a][medium][SRG-APP-000141]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "no"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Internet Explorer\\Main";
+ TargetType = "UserConfiguration";
+ ValueType = "String";
+ ModuleVersion = "1.3.1";
+ ValueName = "FormSuggest Passwords";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile110ref
+{
+ResourceID = "[RegistryPolicyFile][V-223124.b][medium][SRG-APP-000141]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "no"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Internet Explorer\\Main";
+ TargetType = "UserConfiguration";
+ ValueType = "String";
+ ModuleVersion = "1.3.1";
+ ValueName = "FormSuggest PW Ask";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile111ref
+{
+ResourceID = "[RegistryPolicyFile][V-223125][medium][SRG-APP-000206]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "1"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Internet Explorer\\PhishingFilter";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "EnabledV9";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile112ref
+{
+ResourceID = "[RegistryPolicyFile][V-223126][medium][SRG-APP-000089]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "0"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Internet Explorer\\Privacy";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "ClearBrowsingHistoryOnExit";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile113ref
+{
+ResourceID = "[RegistryPolicyFile][V-223127][medium][SRG-APP-000089]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "0"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Internet Explorer\\Privacy";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "CleanHistory";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile114ref
+{
+ResourceID = "[RegistryPolicyFile][V-223128][medium][SRG-APP-000080]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "0"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Internet Explorer\\Privacy";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "EnableInPrivateBrowsing";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile115ref
+{
+ResourceID = "[RegistryPolicyFile][V-223129][medium][SRG-APP-000141]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "3"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "1206";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile116ref
+{
+ResourceID = "[RegistryPolicyFile][V-223130][medium][SRG-APP-000141]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "3"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "160A";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile117ref
+{
+ResourceID = "[RegistryPolicyFile][V-223131][medium][SRG-APP-000141]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "1"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_SECURITYBAND";
+ TargetType = "ComputerConfiguration";
+ ValueType = "String";
+ ModuleVersion = "1.3.1";
+ ValueName = "(Reserved)";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile118ref
+{
+ResourceID = "[RegistryPolicyFile][V-223132][medium][SRG-APP-000516]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "1"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "1806";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile119ref
+{
+ResourceID = "[RegistryPolicyFile][V-223133][medium][SRG-APP-000141]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "1"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_SECURITYBAND";
+ TargetType = "ComputerConfiguration";
+ ValueType = "String";
+ ModuleVersion = "1.3.1";
+ ValueName = "explorer.exe";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile120ref
+{
+ResourceID = "[RegistryPolicyFile][V-223134][medium][SRG-APP-000210]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "3"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "120b";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile121ref
+{
+ResourceID = "[RegistryPolicyFile][V-223135][medium][SRG-APP-000141]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "1"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_SECURITYBAND";
+ TargetType = "ComputerConfiguration";
+ ValueType = "String";
+ ModuleVersion = "1.3.1";
+ ValueName = "iexplore.exe";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile122ref
+{
+ResourceID = "[RegistryPolicyFile][V-223136][medium][SRG-APP-000141]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "0"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "1409";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile123ref
+{
+ResourceID = "[RegistryPolicyFile][V-223137][medium][SRG-APP-000141]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "3"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "1206";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile124ref
+{
+ResourceID = "[RegistryPolicyFile][V-223138][medium][SRG-APP-000141]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "3"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "160A";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile125ref
+{
+ResourceID = "[RegistryPolicyFile][V-223139][medium][SRG-APP-000516]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "3"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "1806";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile126ref
+{
+ResourceID = "[RegistryPolicyFile][V-223140][medium][SRG-APP-000210]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "3"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "120b";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile127ref
+{
+ResourceID = "[RegistryPolicyFile][V-223141][medium][SRG-APP-000141]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "0"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "1409";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile128ref
+{
+ResourceID = "[RegistryPolicyFile][V-223142][medium][SRG-APP-000112]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "1"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_RESTRICT_ACTIVEXINSTALL";
+ TargetType = "ComputerConfiguration";
+ ValueType = "String";
+ ModuleVersion = "1.3.1";
+ ValueName = "(Reserved)";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile129ref
+{
+ResourceID = "[RegistryPolicyFile][V-223143][medium][SRG-APP-000141]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "3"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "2103";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile130ref
+{
+ResourceID = "[RegistryPolicyFile][V-223144][medium][SRG-APP-000516]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "3"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "2004";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile131ref
+{
+ResourceID = "[RegistryPolicyFile][V-223145][medium][SRG-APP-000516]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "3"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "2001";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile132ref
+{
+ResourceID = "[RegistryPolicyFile][V-223146][medium][SRG-APP-000141]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "3"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "1209";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile133ref
+{
+ResourceID = "[RegistryPolicyFile][V-223147][medium][SRG-APP-000141]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "3"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "2103";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile134ref
+{
+ResourceID = "[RegistryPolicyFile][V-223148][medium][SRG-APP-000516]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "1"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Internet Explorer\\Main";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "DisableEPMCompat";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile135ref
+{
+ResourceID = "[RegistryPolicyFile][V-223149][medium][SRG-APP-000039]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "3"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "2709";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile136ref
+{
+ResourceID = "[RegistryPolicyFile][V-250540][medium][SRG-APP-000416]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "2048"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "SecureProtocols";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RegistryPolicyFile as $MSFT_RegistryPolicyFile137ref
+{
+ResourceID = "[RegistryPolicyFile][V-250541][medium][SRG-APP-000416]::[InternetExplorer]STIG_IE11";
+ ValueData = {
+    "0"
+};
+ Ensure = "Present";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Registry.ps1::40::13::RegistryPolicyFile";
+ ModuleName = "GPRegistryPolicyDsc";
+ Key = "Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings";
+ TargetType = "ComputerConfiguration";
+ ValueType = "Dword";
+ ModuleVersion = "1.3.1";
+ ValueName = "EnableSSL3Fallback";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_ScriptResource as $MSFT_ScriptResource1ref
+{
+GetScript = "$resourceTitle ='[V-223016][low][[Skip] SRG-APP-000175]'\n\n            Return @{\n                'Result' = $resourceTitle\n            }\n        ";
+ SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.Script.skip.ps1::10::5::Script";
+ ModuleName = "PSDscResources";
+ TestScript = "\n            return $true\n        ";
+ ModuleVersion = "2.12.0.0";
+ SetScript = " ";
+ ResourceID = "[Script][V-223016][low][[Skip] SRG-APP-000175]::[InternetExplorer]STIG_IE11";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of MSFT_RefreshRegistryPolicy as $MSFT_RefreshRegistryPolicy1ref
+{
+SourceInfo = "C:\\Users\\svaelter\\OneDrive - Microsoft\\Documents\\PowerShell\\Modules\\PowerSTIG\\4.25.0\\DscResources\\Resources\\windows.RefreshRegistryPolicy.ps1::4::1::RefreshRegistryPolicy";
+ ResourceID = "[RefreshRegistryPolicy]PowerSTIGRefreshRegistryPolicy::[InternetExplorer]STIG_IE11";
+ ModuleVersion = "1.3.1";
+ IsSingleInstance = "Yes";
+ ModuleName = "GPRegistryPolicyDsc";
+ ConfigurationName = "WindowsClientAVD";
+};
+instance of OMI_ConfigurationDocument
+
+                    {
+ Version="2.0.0";
+
+                        MinimumCompatibleVersion = "1.0.0";
+
+                        CompatibleVersionAdditionalProperties= {"Omi_BaseResource:ConfigurationName"};
+
+                        Author="svaelter";
+
+                        GenerationDate="05/20/2025 09:38:15";
+
+                        GenerationHost="SVAELTER-SLS2";
+
+                        Name="WindowsClientAVD";
+
+                    };
