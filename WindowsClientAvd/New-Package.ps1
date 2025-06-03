@@ -1,9 +1,15 @@
+$MetaData = Get-Content -Path './MetaData.jsonc' | ConvertFrom-Json
+
+[string]$Version = $MetaData.version
+
 [hashtable]$params = @{
-    Name          = 'WindowsClientAVD'
+    Name          = "WindowsClientAVD-$Version"
     Configuration = './localhost.mof'
-    Version       = "0.0.1"
+    Version       = $Version
     Type          = 'AuditAndSet'
     Force         = $true
     Path          = './Package'
 }
 New-GuestConfigurationPackage @params
+
+# TODO: Upload package to Azure Storage Account (will use Azure DevOps pipeline task)

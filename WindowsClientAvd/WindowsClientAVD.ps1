@@ -19,13 +19,13 @@ Configuration WindowsClientAVD
         }
     }
 
-    # [scriptblock]$ie11Stig = {
+    [scriptblock]$ie11Stig = {
 
-    InternetExplorer STIG_IE11 {
-        BrowserVersion = '11'
-        SkipRule       = 'V-223016'
+        InternetExplorer STIG_IE11 {
+            BrowserVersion = '11'
+            SkipRule       = 'V-223016'
+        }
     }
-    # }
 
     [scriptblock]$dotnetFrameworkStig = {
 
@@ -118,16 +118,16 @@ Configuration WindowsClientAVD
         }
     }
     
-    # Node localhost
-    # {
-    #     # $localConfigurationManager.Invoke()
-    #     # $windowsStig.Invoke()
-    #     # $ie11Stig.Invoke()
-    #     # $dotnetFrameworkStig.Invoke()
-    #     # $windowsDefenderStig.Invoke()
-    #     # $windowsFirewallStig.Invoke()
-    #     # $microsoftEdgeStig.Invoke()
-    # }
+    Node localhost
+    {
+        # $localConfigurationManager.Invoke()
+        # $windowsStig.Invoke()
+        $ie11Stig.Invoke()
+        # $dotnetFrameworkStig.Invoke()
+        # $windowsDefenderStig.Invoke()
+        # $windowsFirewallStig.Invoke()
+        # $microsoftEdgeStig.Invoke()
+    }
 }
 
 WindowsClientAVD

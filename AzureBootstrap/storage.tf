@@ -15,7 +15,8 @@ module "storage" {
   large_file_share_enabled          = true
   public_network_access_enabled     = true
 
-  shared_access_key_enabled = false
+  # Required for access from Arc enabled servers. They don't support User-Assigned Managed Identities (UAMI) yet.
+  shared_access_key_enabled = true
 
   network_rules = {
     bypass         = ["AzureServices"]

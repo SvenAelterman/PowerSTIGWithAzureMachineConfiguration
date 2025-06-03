@@ -1,0 +1,12 @@
+# DevOps/Automation note: these intermediate outputs can be included as intermediate artifacts for troubleshooting.
+
+# Do not include the final package files? (TBD)
+*.zip
+
+# Do not include the built MOF files
+*.mof
+
+# Common TF exclusions
+*.tfvars
+*.tfstate*
+.terraform/
