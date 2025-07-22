@@ -24,6 +24,7 @@ configuration this
         #     StigVersion = '3.4'
         #     #DomainName  = 'sample.test'
         #     #ForestName  = 'sample.test'
+              OrgSettings  = "<absolute_path_to_xml>"
         # }
     }
 }
