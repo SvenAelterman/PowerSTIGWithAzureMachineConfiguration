@@ -18,14 +18,14 @@ configuration this
     Node $NodeName
     {
         WindowsServer BaseLine
-        # {
-        #     OsVersion   = '2022'
-        #     OsRole      = 'MS'
-        #     StigVersion = '3.4'
-        #     #DomainName  = 'sample.test'
-        #     #ForestName  = 'sample.test'
-              OrgSettings  = "<absolute_path_to_xml>"
-        # }
+        {
+            OsVersion   = '2022'
+            OsRole      = 'MS'
+            OrgSettings  = "<absolute_path_to_xml>"
+            StigVersion = '3.4'
+            #DomainName  = 'sample.test'
+            #ForestName  = 'sample.test'
+        }
     }
 }
 
