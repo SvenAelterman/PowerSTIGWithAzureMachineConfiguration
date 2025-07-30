@@ -7,13 +7,21 @@ param (
     [string] $StorageAcctResourceGroupName,
 
     [Parameter(Mandatory)]
-    [string] $StorageAcctName
+    [string] $StorageAcctName,
+
+    [Parameter()]
+    [string] $ManagedIdentityResourceId = ""
 )
+
+
+$MetaData = Get-Content -Path './metadata.jsonc' | ConvertFrom-Json
+[string]$Version = $MetaData.version
+[string]$Guid = $MetaData.guid
+
 
 # Get a SAS URL for the package
 # TODO: Get storage account name from some config or from Terraform bootstrap output
 $Context = Get-AzStorageContainer -Name $ContainerName -Context (Get-AzStorageAccount -ResourceGroupName $StorageAcctResourceGroupName -Name $StorageAcctName).Context
-
 $StartTime = Get-Date
 $EndTime = $StartTime.AddYears(3)
 
@@ -21,7 +29,7 @@ $TokenParams = @{
     StartTime  = $StartTime
     ExpiryTime = $EndTime
     Container  = $ContainerName
-    Blob       = '${{PolicyName}}-0.0.1.zip' # Must match the name of the package created in New-Package.ps1
+    Blob       = "${{PolicyName}}-${Version}.zip" # Must match the name of the package created in New-Package.ps1
     Permission = 'r' # Read permission
     Context    = $Context.Context
     FullUri    = $true
@@ -33,7 +41,7 @@ $MetaData = Get-Content -Path './metadata.jsonc' | ConvertFrom-Json
 [string]$Version = $MetaData.version
 [string]$Guid = $MetaData.guid
 
-$PolicyConfig = @{
+$basePolicyConfig = @{
     PolicyId      = $Guid # Must be a GUID. Use the same GUID for a new version of the policy definition.
     DisplayName   = "${{PolicyName}} STIG Configuration"
     Description   = "Audits and applies the ${{PolicyName}} STIG configuration."
@@ -42,15 +50,27 @@ $PolicyConfig = @{
     Platform      = 'Windows'
     Mode          = 'ApplyAndAutoCorrect'
 
-    #LocalContentPath = "./Package/${{PolicyName}}.zip"
-    Path          = "./policies/deployIfNotExists"
     # Azure resources
-    # - Storage Account
-    #ContentUri    = "https://${StorageAcctName}.blob.core.windows.net/stig-policy-store/${{PolicyName}}.zip"
+    # ContentUri    = "https://${StorageAcctName}.blob.core.windows.net/stig-policy-store/${{PolicyName}}-${Version}.zip"
     ContentUri    = $ContentUri
-    # - Managed Identity
-    #ManagedIdentityResourceId = "" # Not supported for Arc machines
 }
-New-GuestConfigurationPolicy @PolicyConfig # -ExcludeArcMachines switch might be required (Arc machines don't support User-assigned Managed Identities)
+
+$umiPolicyConfig = if ($ManagedIdentityResourceId -eq "") {
+    @{
+        Path               = "./policies/arc-enabled-and-azure/deployIfNotExists"
+        ExcludeArcMachines = $false # $true for UMI parameter set
+    }
+} else {
+    @{
+        Path               = "./policies/azure-only/deployIfNotExists"
+        ExcludeArcMachines = $true # $true for UMI parameter set
+        LocalContentPath = "./Package/${{PolicyName}}-${Version}.zip"
+        ManagedIdentityResourceId = $ManagedIdentityResourceId
+    }
+}
+
+$PolicyConfig = $basePolicyConfig + $umiPolicyConfig
+
+New-GuestConfigurationPolicy @PolicyConfig
 
 # Deploy the policy to an Azure Management Group
