@@ -10,14 +10,19 @@ param (
     [string] $StorageAcctName,
 
     [Parameter()]
+    [string] $ManagementGroupName = "",
+
+    [Parameter()]
     [string] $ManagedIdentityResourceId = ""
 )
 
+$PolicyDisplayName = "${{PolicyName}} STIG Configuration"
+$PolicyName        = $PolicyDisplayName.Replace(' ', '').Replace('-', '')
+$PolicyDescription ="Audits and applies the ${{PolicyName}} STIG configuration."
 
 $MetaData = Get-Content -Path './metadata.jsonc' | ConvertFrom-Json
-[string]$Version = $MetaData.version
-[string]$Guid = $MetaData.guid
-
+$Guid     = [string] $MetaData.guid
+$Version  = [string] $MetaData.version
 
 # Get a SAS URL for the package
 # TODO: Get storage account name from some config or from Terraform bootstrap output
@@ -36,15 +41,11 @@ $TokenParams = @{
 }
 [string]$ContentUri = New-AzStorageBlobSASToken @TokenParams
 
-$MetaData = Get-Content -Path './metadata.jsonc' | ConvertFrom-Json
-
-[string]$Version = $MetaData.version
-[string]$Guid = $MetaData.guid
 
 $basePolicyConfig = @{
-    PolicyId      = $Guid # Must be a GUID. Use the same GUID for a new version of the policy definition.
-    DisplayName   = "${{PolicyName}} STIG Configuration"
-    Description   = "Audits and applies the ${{PolicyName}} STIG configuration."
+    PolicyId      = $Guid # Use the same GUID for each new version of the policy definition.
+    DisplayName   = $PolicyDisplayName
+    Description   = $PolicyDescription
     PolicyVersion = $Version
 
     Platform      = 'Windows'
@@ -55,14 +56,20 @@ $basePolicyConfig = @{
     ContentUri    = $ContentUri
 }
 
+$AzPolicyDefinitionRootPath = if ($ManagedIdentityResourceId -eq "") {
+    "./policies/arc-enabled-and-azure/deployIfNotExists"
+} else {
+    "./policies/azure-only/deployIfNotExists"
+}
+
 $umiPolicyConfig = if ($ManagedIdentityResourceId -eq "") {
     @{
-        Path               = "./policies/arc-enabled-and-azure/deployIfNotExists"
+        Path               = $AzPolicyDefinitionRootPath
         ExcludeArcMachines = $false # $true for UMI parameter set
     }
 } else {
     @{
-        Path               = "./policies/azure-only/deployIfNotExists"
+        Path               = $AzPolicyDefinitionRootPath
         ExcludeArcMachines = $true # $true for UMI parameter set
         LocalContentPath = "./Package/${{PolicyName}}-${Version}.zip"
         ManagedIdentityResourceId = $ManagedIdentityResourceId
@@ -73,4 +80,14 @@ $PolicyConfig = $basePolicyConfig + $umiPolicyConfig
 
 New-GuestConfigurationPolicy @PolicyConfig
 
-# Deploy the policy to an Azure Management Group
+if ($ManagementGroupName -ne "") {
+    # Deploy the policy to an Azure Management Group
+    $newAzPolicyDefinitionParams = @{
+        Name                = $PolicyName
+        DisplayName         = $PolicyDisplayName
+        Policy              = "$AzPolicyDefinitionRootPath/${{PolicyName}}-${Version}_DeployIfNotExists.json"
+        ManagementGroupName = $ManagementGroupName
+        Description         = $PolicyDescription
+    }
+    New-AzPolicyDefinition @newAzPolicyDefinitionParams
+}
