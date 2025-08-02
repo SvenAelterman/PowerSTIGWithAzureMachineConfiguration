@@ -19,10 +19,10 @@ Set-PSRepository -Name PSGallery -InstallationPolicy Untrusted
 ```
 
 ```PowerShell
-# From an elevated PowerShell session
-# Install required DSC modules
+# Stage the required DSC modules in authoring environment
+# Note, that we will pin the versions of these modules.
 (Get-Module PowerStig -ListAvailable).RequiredModules | % {
-   $PSItem | Install-Module -Force
+    Install-Module -Name $_.Name -RequiredVersion $_.Version -Force
 }
 ```
 
