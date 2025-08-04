@@ -1,16 +1,19 @@
-[CmdletBinding()]
+[CmdletBinding(DefaultParametersetName="default")]
 param (
     [Parameter()]
     [string] $ContainerName = 'stig-policy-store',
 
-    [Parameter(Mandatory)]
-    [string] $StorageAcctResourceGroupName,
-
-    [Parameter(Mandatory)]
-    [string] $StorageAcctName,
+    [Parameter()]
+    [string] $StorageAcctResourceGroupName = 'StigMC-demo-rg-cnc-01',
 
     [Parameter()]
+    [string] $StorageAcctName = 'stigmcdemostcnc01',
+
+    [Parameter(ParameterSetName="mgt")]
     [string] $ManagementGroupName = "",
+
+    [Parameter(ParameterSetName="sub")]
+    [string] $SubscriptionId = "",
 
     [Parameter()]
     [string] $ManagedIdentityResourceId = ""
@@ -80,14 +83,21 @@ $PolicyConfig = $basePolicyConfig + $umiPolicyConfig
 
 New-GuestConfigurationPolicy @PolicyConfig
 
-if ($ManagementGroupName -ne "") {
+if (($ManagementGroupName -ne "") -or ($SubscriptionId -ne "")) {
     # Deploy the policy to an Azure Management Group
-    $newAzPolicyDefinitionParams = @{
+    $baseAzPolicyDefinitionParams = @{
         Name                = $PolicyName
         DisplayName         = $PolicyDisplayName
         Policy              = "$AzPolicyDefinitionRootPath/${{PolicyName}}-${Version}_DeployIfNotExists.json"
-        ManagementGroupName = $ManagementGroupName
         Description         = $PolicyDescription
     }
+    $scopeAzPolicyDefinitionParam = if ($ManagementGroupName -ne "") {
+        @{ManagementGroupName = $ManagementGroupName}
+    } elseif ($SubscriptionId -ne "") {
+        @{SubscriptionId = $SubscriptionId}
+    } else {
+        @{}
+    }
+    $newAzPolicyDefinitionParams = $baseAzPolicyDefinitionParams +  $scopeAzPolicyDefinitionParam
     New-AzPolicyDefinition @newAzPolicyDefinitionParams
 }
