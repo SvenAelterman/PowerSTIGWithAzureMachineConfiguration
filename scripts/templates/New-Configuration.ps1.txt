@@ -22,7 +22,7 @@ configuration this
             # These options correspond to WindowsServer-2022-MS-2.4.org.xml
             OsVersion   = '2022'
             OsRole      = 'MS'
-            OrgSettings  = "../OrgSettings/<composite_resource.org.xml>"
+            OrgSettings  = "../OrgSettings/${{PolicyName}}.xml"
             StigVersion = '2.4'
             #DomainName  = 'sample.test'
             #ForestName  = 'sample.test'
