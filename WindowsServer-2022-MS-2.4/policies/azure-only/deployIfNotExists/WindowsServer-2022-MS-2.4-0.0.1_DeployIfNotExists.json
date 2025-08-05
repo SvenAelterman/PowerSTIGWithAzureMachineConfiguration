@@ -1,0 +1,303 @@
+{
+    "properties": {
+        "displayName": "WindowsServer-2022-MS-2.4 STIG Configuration",
+        "policyType": "Custom",
+        "mode": "Indexed",
+        "description": "Audits and applies the WindowsServer-2022-MS-2.4 STIG configuration.",
+        "metadata": {
+            "category": "Guest Configuration",
+            "version": "0.0.1",
+            "requiredProviders": [
+                "Microsoft.GuestConfiguration"
+            ],
+            "guestConfiguration": {
+                "name": "WindowsServer-2022-MS-2.4-0.0.1",
+                "version": "0.0.1",
+                "contentType": "Custom",
+                "contentUri": "https://stigmcdemostcnc01.blob.core.windows.net/stig-policy-store/WindowsServer-2022-MS-2.4-0.0.1.zip?skoid=382e6738-13ae-4f9d-a9c0-7b97928400d8&sktid=f32e1116-2381-487a-85e9-787ba4faa7bb&skt=2025-08-04T18%3A35%3A27Z&ske=2025-08-07T18%3A35%3A27Z&sks=b&skv=2025-05-05&sv=2025-05-05&st=2025-08-04T18%3A35%3A27Z&se=2025-08-07T18%3A35%3A27Z&sr=b&sp=r&sig=gARzORL81iewCXpzRP2O8DTsjYzvZWFTHa36SK7X1zc%3D",
+                "contentHash": "FDE5CDB755462C7C1AC258B3FFC9D99623F956634B3678CFCB42004D385B8259",
+                "contentManagedIdentity": "/subscriptions/3dff64b5-1689-44c4-b5ac-c7cad274bf5b/resourcegroups/StigMC-demo-rg-cnc-01/providers/Microsoft.ManagedIdentity/userAssignedIdentities/StigMC-demo-id-cnc-01"
+            }
+        },
+        "parameters": {},
+            "policyRule": {
+                "if": {
+                    "anyOf": [
+                        {
+                            "allOf": [
+                                {
+                                    "anyOf": [
+                                        {
+                                            "field": "type",
+                                            "equals": "Microsoft.Compute/virtualMachines"
+                                        },
+                                        {
+                                            "field": "type",
+                                            "equals": "Microsoft.Compute/virtualMachineScaleSets"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "field": "tags['aks-managed-orchestrator']",
+                                    "exists": "false"
+                                },
+                                {
+                                    "field": "tags['aks-managed-poolName']",
+                                    "exists": "false"
+                                },
+                                {
+                                    "anyOf": [
+                                        {
+                                            "field": "Microsoft.Compute/imagePublisher",
+                                            "in": [
+                                                "esri",
+                                                "incredibuild",
+                                                "MicrosoftDynamicsAX",
+                                                "MicrosoftSharepoint",
+                                                "MicrosoftVisualStudio",
+                                                "MicrosoftWindowsDesktop",
+                                                "MicrosoftWindowsServerHPCPack"
+                                            ]
+                                        },
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "field": "Microsoft.Compute/imagePublisher",
+                                                    "equals": "MicrosoftWindowsServer"
+                                                },
+                                                {
+                                                    "field": "Microsoft.Compute/imageSKU",
+                                                    "notLike": "2008*"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "field": "Microsoft.Compute/imagePublisher",
+                                                    "equals": "MicrosoftSQLServer"
+                                                },
+                                                {
+                                                    "field": "Microsoft.Compute/imageOffer",
+                                                    "notLike": "SQL2008*"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "field": "Microsoft.Compute/imagePublisher",
+                                                    "equals": "microsoft-dsvm"
+                                                },
+                                                {
+                                                    "field": "Microsoft.Compute/imageOffer",
+                                                    "like": "dsvm-win*"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "field": "Microsoft.Compute/imagePublisher",
+                                                    "equals": "microsoft-ads"
+                                                },
+                                                {
+                                                    "field": "Microsoft.Compute/imageOffer",
+                                                    "in": [
+                                                        "standard-data-science-vm",
+                                                        "windows-data-science-vm"
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "field": "Microsoft.Compute/imagePublisher",
+                                                    "equals": "batch"
+                                                },
+                                                {
+                                                    "field": "Microsoft.Compute/imageOffer",
+                                                    "equals": "rendering-windows2016"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "field": "Microsoft.Compute/imagePublisher",
+                                                    "equals": "center-for-internet-security-inc"
+                                                },
+                                                {
+                                                    "field": "Microsoft.Compute/imageOffer",
+                                                    "like": "cis-windows-server-201*"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "field": "Microsoft.Compute/imagePublisher",
+                                                    "equals": "pivotal"
+                                                },
+                                                {
+                                                    "field": "Microsoft.Compute/imageOffer",
+                                                    "like": "bosh-windows-server*"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "field": "Microsoft.Compute/imagePublisher",
+                                                    "equals": "cloud-infrastructure-services"
+                                                },
+                                                {
+                                                    "field": "Microsoft.Compute/imageOffer",
+                                                    "like": "ad*"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "anyOf": [
+                                                        {
+                                                            "field": "Microsoft.Compute/virtualMachines/osProfile.windowsConfiguration",
+                                                            "exists": true
+                                                        },
+                                                        {
+                                                            "field": "Microsoft.Compute/virtualMachines/storageProfile.osDisk.osType",
+                                                            "like": "Windows*"
+                                                        },
+                                                        {
+                                                            "field": "Microsoft.Compute/VirtualMachineScaleSets/osProfile.windowsConfiguration",
+                                                            "exists": true
+                                                        },
+                                                        {
+                                                            "field": "Microsoft.Compute/virtualMachineScaleSets/virtualMachineProfile.storageProfile.osDisk.osType",
+                                                            "like": "Windows*"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "anyOf": [
+                                                        {
+                                                            "field": "Microsoft.Compute/imageSKU",
+                                                            "exists": false
+                                                        },
+                                                        {
+                                                            "allOf": [
+                                                                {
+                                                                    "field": "Microsoft.Compute/imageOffer",
+                                                                    "notLike": "SQL2008*"
+                                                                },
+                                                                {
+                                                                    "field": "Microsoft.Compute/imageSKU",
+                                                                    "notLike": "2008*"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "then": {
+                    "effect": "deployIfNotExists",
+                    "details": {
+                        "roleDefinitionIds": [
+                            "/providers/Microsoft.Authorization/roleDefinitions/088ab73d-1256-47ae-bea9-9de8e7131f31"
+                        ],
+                        "type": "Microsoft.GuestConfiguration/guestConfigurationAssignments",
+                        "name": "[concat('WindowsServer-2022-MS-2.4-0.0.1$pid', uniqueString(policy().assignmentId, policy().definitionReferenceId))]",
+                        "existenceCondition": {
+                            "field": "Microsoft.GuestConfiguration/guestConfigurationAssignments/complianceStatus",
+                            "equals": "Compliant"
+                        },
+                        "deployment": {
+                            "properties": {
+                                "mode": "incremental",
+                                "parameters": {
+                                    "vmName": {
+                                        "value": "[field('name')]"
+                                    },
+                                    "location": {
+                                        "value": "[field('location')]"
+                                    },
+                                    "type": {
+                                        "value": "[field('type')]"
+                                    },
+                                    "assignmentName": {
+                                        "value": "[concat('WindowsServer-2022-MS-2.4-0.0.1$pid', uniqueString(policy().assignmentId, policy().definitionReferenceId))]"
+                                    }
+                                },
+                                "template": {
+                                    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+                                    "contentVersion": "1.0.0.0",
+                                    "parameters": {
+                                        "vmName": {
+                                            "type": "string"
+                                        },
+                                        "location": {
+                                            "type": "string"
+                                        },
+                                        "type": {
+                                            "type": "string"
+                                        },
+                                        "assignmentName": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "resources": [
+                                        {
+                                            "condition": "[equals(toLower(parameters('type')), toLower('Microsoft.Compute/virtualMachines'))]",
+                                            "apiVersion": "2024-04-05",
+                                            "type": "Microsoft.Compute/virtualMachines/providers/guestConfigurationAssignments",
+                                            "name": "[concat(parameters('vmName'), '/Microsoft.GuestConfiguration/', parameters('assignmentName'))]",
+                                            "location": "[parameters('location')]",
+                                            "properties": {
+                                                "guestConfiguration": {
+                                                    "name": "WindowsServer-2022-MS-2.4-0.0.1",
+                                                    "version": "0.0.1",
+                                                    "contentType": "Custom",
+                                                    "contentUri": "https://stigmcdemostcnc01.blob.core.windows.net/stig-policy-store/WindowsServer-2022-MS-2.4-0.0.1.zip?skoid=382e6738-13ae-4f9d-a9c0-7b97928400d8&sktid=f32e1116-2381-487a-85e9-787ba4faa7bb&skt=2025-08-04T18%3A35%3A27Z&ske=2025-08-07T18%3A35%3A27Z&sks=b&skv=2025-05-05&sv=2025-05-05&st=2025-08-04T18%3A35%3A27Z&se=2025-08-07T18%3A35%3A27Z&sr=b&sp=r&sig=gARzORL81iewCXpzRP2O8DTsjYzvZWFTHa36SK7X1zc%3D",
+                                                    "contentHash": "FDE5CDB755462C7C1AC258B3FFC9D99623F956634B3678CFCB42004D385B8259",
+                                                    "assignmentType": "ApplyAndAutoCorrect",
+                                                    "contentManagedIdentity": "/subscriptions/3dff64b5-1689-44c4-b5ac-c7cad274bf5b/resourcegroups/StigMC-demo-rg-cnc-01/providers/Microsoft.ManagedIdentity/userAssignedIdentities/StigMC-demo-id-cnc-01"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "condition": "[equals(toLower(parameters('type')), toLower('Microsoft.Compute/virtualMachineScaleSets'))]",
+                                            "apiVersion": "2024-04-05",
+                                            "type": "Microsoft.Compute/virtualMachineScaleSets/providers/guestConfigurationAssignments",
+                                            "name": "[concat(parameters('vmName'), '/Microsoft.GuestConfiguration/', parameters('assignmentName'))]",
+                                            "location": "[parameters('location')]",
+                                            "properties": {
+                                                "guestConfiguration": {
+                                                    "name": "WindowsServer-2022-MS-2.4-0.0.1",
+                                                    "version": "0.0.1",
+                                                    "contentType": "Custom",
+                                                    "contentUri": "https://stigmcdemostcnc01.blob.core.windows.net/stig-policy-store/WindowsServer-2022-MS-2.4-0.0.1.zip?skoid=382e6738-13ae-4f9d-a9c0-7b97928400d8&sktid=f32e1116-2381-487a-85e9-787ba4faa7bb&skt=2025-08-04T18%3A35%3A27Z&ske=2025-08-07T18%3A35%3A27Z&sks=b&skv=2025-05-05&sv=2025-05-05&st=2025-08-04T18%3A35%3A27Z&se=2025-08-07T18%3A35%3A27Z&sr=b&sp=r&sig=gARzORL81iewCXpzRP2O8DTsjYzvZWFTHa36SK7X1zc%3D",
+                                                    "contentHash": "FDE5CDB755462C7C1AC258B3FFC9D99623F956634B3678CFCB42004D385B8259",
+                                                    "assignmentType": "ApplyAndAutoCorrect",
+                                                    "contentManagedIdentity": "/subscriptions/3dff64b5-1689-44c4-b5ac-c7cad274bf5b/resourcegroups/StigMC-demo-rg-cnc-01/providers/Microsoft.ManagedIdentity/userAssignedIdentities/StigMC-demo-id-cnc-01"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "name": "24d103dd-dab4-4e82-8ae0-e2a56fcd20e7"
+    }
