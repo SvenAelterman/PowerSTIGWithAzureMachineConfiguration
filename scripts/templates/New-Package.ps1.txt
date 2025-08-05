@@ -1,0 +1,38 @@
+[CmdletBinding()]
+param (
+    [Parameter()]
+    [string] $ContainerName = 'stig-policy-store',
+
+    [Parameter()]
+    [string] $StorageAcctResourceGroupName = 'StigMC-demo-rg-cnc-01',
+
+    [Parameter()]
+    [string] $StorageAcctName = 'stigmcdemostcnc01'
+)
+
+$MetaData = Get-Content -Path './metadata.jsonc' | ConvertFrom-Json
+
+[string]$Version = $MetaData.version
+
+[hashtable]$params = @{
+    Name          = "${{PolicyName}}-$Version"
+    Configuration = './this/localhost.mof'
+    Version       = $Version
+    Type          = 'AuditAndSet'
+    Force         = $true
+    Path          = './Package'
+}
+New-GuestConfigurationPackage @params
+
+# Upload
+$Context = (Get-AzStorageAccount -ResourceGroupName $StorageAcctResourceGroupName -Name $StorageAcctName).Context
+
+$blobPararms = @{
+    File = "./Package/${{PolicyName}}-${Version}.zip"
+    Container = $ContainerName
+    Blob = "${{PolicyName}}-${Version}.zip"
+    Context = $Context
+    StandardBlobTier = 'Hot'
+}
+
+Set-AzStorageBlobContent @blobPararms
