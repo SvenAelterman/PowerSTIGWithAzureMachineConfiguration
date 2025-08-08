@@ -55,6 +55,7 @@ configuration this
                 # 'V-254510' = @{ Identity = 'Administrators' }
                 # 'V-254511' = @{ Identity = 'Administrators' }
                 # 'V-254512' = @{ Identity = 'Administrators' }
+                'V-254444' = @{ Thumbprint = 'NUL'; Location = 'NUL'}
             }
         }
     }
