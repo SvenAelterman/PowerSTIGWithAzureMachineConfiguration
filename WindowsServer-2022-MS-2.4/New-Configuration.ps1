@@ -24,38 +24,27 @@ configuration this
             OsRole      = 'MS'
             OrgSettings  = "../OrgSettings/WindowsServer-2022-MS-2.4.org.xml"
             StigVersion = '2.4'
-            #DomainName  = 'wirebyte.local'
-            #ForestName  = 'sample.test'
+            #DomainName  = ''
+            #ForestName  = ''
 
+            # Rules are skipped because we do not have root certs.
+            # Require DoD login.
+            SkipRule = @(
+                'V-254442.a'
+                ,'V-254442.b'
+                ,'V-254442.c'
+                ,'V-254442.d'
+                ,'V-254443'
+                ,'V-254444'
+            )
+
+            # These exceptions must be made because server is not domain joined.
+            # DomainName and ForestName are not specified.
             Exception   = @{
-                'V-254434' = @{ Identity = 'Administrators,Authenticated Users' }
-                'V-254436' = @{ Identity = 'Administrators,Guests' }
+                'V-254436' = @{ Identity = 'Guests' }
                 'V-254437' = @{ Identity = 'Administrators' }
-                'V-254438' = @{ Identity = 'Administrators,Guests' }
-                'V-254439' = @{ Identity = 'Administrators,Local account,Guests' }
-                'V-254440' = @{ Identity = 'NUL' }
-                'V-254491' = @{ Identity = 'NUL' }
-                'V-254492' = @{ Identity = 'NUL' }
-                # 'V-254493' = @{ Identity = 'Administrators' }
-                # 'V-254494' = @{ Identity = 'Administrators' }
-                # 'V-254495' = @{ Identity = 'Administrators' }
-                'V-254496' = @{ Identity = 'NUL' }
-                # 'V-254497' = @{ Identity = 'Administrators,Service,Local Service,Network Service' }
-                'V-254498' = @{ Identity = 'NUL' }
-                # 'V-254500' = @{ Identity = 'Administrators' }
-                # 'V-254501' = @{ Identity = 'Administrators' }
-                # 'V-254502' = @{ Identity = 'Local Service,Network Service' }
-                # 'V-254503' = @{ Identity = 'Administrators,Service,Local Service,Network Service' }
-                # 'V-254504' = @{ Identity = 'Administrators' }
-                # 'V-254505' = @{ Identity = 'Administrators' }
-                'V-254506' = @{ Identity = 'NUL' }
-                # 'V-254507' = @{ Identity = 'Administrators' }
-                # 'V-254508' = @{ Identity = 'Administrators' }
-                # 'V-254509' = @{ Identity = 'Administrators' }
-                # 'V-254510' = @{ Identity = 'Administrators' }
-                # 'V-254511' = @{ Identity = 'Administrators' }
-                # 'V-254512' = @{ Identity = 'Administrators' }
-                'V-254444' = @{ Thumbprint = 'NUL'; Location = 'NUL'}
+                'V-254438' = @{ Identity = 'Guests' }
+                'V-254439' = @{ Identity = 'Guests' }
             }
         }
     }
