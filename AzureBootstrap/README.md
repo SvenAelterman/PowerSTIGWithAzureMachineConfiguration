@@ -12,3 +12,9 @@ location            = "eastus"
 ```
 
 Run `terraform apply`.
+
+## Note
+
+This will create a storage account that will only allow access to the policy author's IP address.
+The author will need to create a service endpoint to allow the Azure VMs that will be managed by the authored guest machine policies to access the packages referenced by the policy.
+If Azure ARC-enabled servers will be within scope, then a private endpoint, private DNS, and forwarding will need to setup to allow these resources access.
