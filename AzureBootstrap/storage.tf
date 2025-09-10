@@ -6,8 +6,8 @@ module "storage" {
   enable_telemetry = var.enable_telemetry
 
   name                = lower(replace(replace(local.naming_structure, "{resourceType}", "st"), "-", ""))
-  location            = var.location
-  resource_group_name = var.resource_group_name
+  location            = azurerm_resource_group.bootstrap.location
+  resource_group_name = azurerm_resource_group.bootstrap.name
   tags                = var.tags
 
   default_to_oauth_authentication   = true
