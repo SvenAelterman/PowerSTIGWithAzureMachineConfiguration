@@ -6,6 +6,8 @@ Deploying DISA STIGs using PowerSTIG and Azure Machine Configuration.
 
 ## Requirements
 
+### Local
+
 These PowerShell modules must be available on the authoring workstation or automated build agent.
 
 ```PowerShell
@@ -32,6 +34,19 @@ Set-PSRepository -Name PSGallery -InstallationPolicy Untrusted
     Install-Module -Name $_.Name -RequiredVersion $_.Version -Force
 }
 ```
+
+### Azure
+
+The policy authoring process requires the following Azure resources:
+
+1. Azure subscription to hold the resulting guest policies.
+(A management group is preferable)
+2. Azure subscription for the storage account that will contain the guest policy configuration packages.
+Within the Azure Landing Zone framework, this would be the platform Management subscription.
+3. Azure storage account.
+
+The Azure storage account should be created using the included Terraform module [AzureBootstrap](./AzureBootstrap/).
+Refer to its [README](./AzureBootstrap/README.md) for setup.
 
 ## Example: Creating a STIG-based Azure Guest Configuration Policy for a Windows 2022 Member Server
 
