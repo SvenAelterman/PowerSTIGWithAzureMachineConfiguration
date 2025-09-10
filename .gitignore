@@ -10,3 +10,4 @@
 *.tfvars
 *.tfstate*
 .terraform/
+*.tfplan
