@@ -147,7 +147,9 @@ Next, create a new policy source folder by using the utility script `./scripts/N
 In order to simplify our development of policy, we will create a set of skipped rules comprising the Cat II and Cat III rules.
 
 ```PowerShell
-.\scripts\helpers\Get-SkipMediumLowRules.ps1 | Set-Clipboard
+# Dot source function
+. .\scripts\helpers\Get-SkipMediumLowRules.ps1
+Get-SkipMediumLowRules | Set-Clipboard
 ```
 
 Replacing the line `SkipRule   = @()`, paste the code into `$StigXmlBaseName\New-Configuration.ps1`.
