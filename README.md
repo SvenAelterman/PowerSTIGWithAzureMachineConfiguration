@@ -141,8 +141,16 @@ A sample of an edited organization settings file is located in `scripts/samples/
 Next, create a new policy source folder by using the utility script `./scripts/New-PolicySourceDir.ps1`
 
 ```PowerShell
-.\scripts\New-PolicySourceDir.ps1 -PolicyName "$StigXmlBaseName"
+.\scripts\New-PolicySourceDir.ps1 -Technology $Technology -TechnologyVersion $TechnologyVersion -TechnologyRole $TechnologyRole -StigVersion $StigVersion
 ```
+
+In order to simplify our development of policy, we will create a set of skipped rules comprising the Cat II and Cat III rules.
+
+```PowerShell
+.\scripts\helpers\Get-SkipMediumLowRules.ps1 | Set-Clipboard
+```
+
+Replacing the line `SkipRule   = @()`, paste the code into `$StigXmlBaseName\New-Configuration.ps1`.
 
 We are now ready to create the configuration and policy.
 
@@ -151,11 +159,11 @@ pushd "$StigXmlBaseName"
 
 .\New-Configuration.ps1
 .\New-Package.ps1
- .\New-Policy.ps1
+.\New-Policy.ps1
 
- # alternatively to create an Azure VM only policy, supply the resource id of the user assigned managed identity in from bootstrap
- $mgIdResourceId = "<resourceid>"
- .\New-Policy.ps1 -ManagedIdentityResourceId "$mgIdResourceId"
+# alternatively to create an Azure VM only policy, supply the resource id of the user assigned managed identity created by the bootstrap
+$mgIdResourceId = "<resourceid>"
+.\New-Policy.ps1 -ManagedIdentityResourceId "$mgIdResourceId"
 
 ```
 

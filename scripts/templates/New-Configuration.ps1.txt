@@ -17,15 +17,32 @@ configuration this
 
     Node $NodeName
     {
-        WindowsServer BaseLine
+        ${{Technology}} BaseLine
         {
-            # These options correspond to WindowsServer-2022-MS-2.4.org.xml
-            OsVersion   = '2022'
-            OsRole      = 'MS'
+            # These options correspond to WindowsServer--*-*.org.xml
+            OsVersion   = '${{TechnologyVersion}}'
+            OsRole      = '${{TechnologyRole}}'
             OrgSettings  = "../OrgSettings/${{PolicyName}}.org.xml"
-            StigVersion = '2.4'
-            #DomainName  = 'sample.test'
-            #ForestName  = 'sample.test'
+            StigVersion = '${{StigVersion}}'
+            # DomainName  = 'sample.test'
+            # ForestName  = 'sample.test'
+
+            # The effects of these rules have not been tested against the environment.
+            # As rules are validated, the line corresponding to the skipped rule should be commented out.
+
+            SkipRule   = @()
+            
+            # These exceptions must be made because server is not domain joined.
+            # DomainName and ForestName are commented out.
+            
+            Exception   = @{
+                # 'V-254434' = @{ Identity = 'Everyone, Administrators,Users,Backup Operators'; Force = True}
+                'V-254436' = @{ Identity = 'Guests' }
+                'V-254437' = @{ Identity = 'Administrators' }
+                # 'V-254438' = @{ Identity = 'Guests' }
+                # 'V-254439' = @{ Identity = 'Guests' }
+                # 'V-254493' = @{ Identity = 'Administrators,Users,Backup Operators'; Force = True}
+            }
         }
     }
 }

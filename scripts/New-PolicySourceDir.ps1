@@ -1,20 +1,40 @@
 [CmdletBinding()]
 
 param (
+    [Parameter()]
+    [string] $PolicyId = $([guid]::NewGuid().Guid),
+
     [Parameter(Mandatory)]
-    [string] $PolicyName,
+    [string] $Technology,
+
+    [Parameter(Mandatory)]
+    [string] $TechnologyVersion,
 
     [Parameter()]
-    [string] $PolicyId = $([guid]::NewGuid().Guid)
+    [string] $TechnologyRole = "",
+
+    [Parameter(Mandatory)]
+    [string] $StigVersion
 )
 
 
 $scriptDirPath =  Split-Path -Parent $PSCommandPath
 Write-Verbose $scriptDirPath
 
+$PolicyName = "{0}{1}{2}-{3}" -f (
+  $Technology,
+  $(if ($TechnologyVersion.Length -eq 0) {"-All"} else {"-$TechnologyVersion"}),
+  $(if ($TechnologyRole.Length -eq 0) {''} else {"-$TechnologyRole"}),
+  $StigVersion
+)
+
 $replacementTable = @{
   PolicyName = $PolicyName
   Id = $PolicyId
+  Technology = $Technology
+  TechnologyRole = $TechnologyRole
+  TechnologyVersion = $TechnologyVersion
+  StigVersion = $StigVersion
 }
 
 $policySrcDir = New-Item -ItemType Directory -Path $PolicyName
