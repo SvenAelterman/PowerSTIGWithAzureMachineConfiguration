@@ -11,12 +11,11 @@ param (
 )
 
 $MetaData = Get-Content -Path './metadata.jsonc' | ConvertFrom-Json
-
 [string]$Version = $MetaData.version
 
 [hashtable]$params = @{
     Name          = "${{PolicyName}}-$Version"
-    Configuration = './this/localhost.mof'
+    Configuration = "./this/localhost-$Version.mof"
     Version       = $Version
     Type          = 'AuditAndSet'
     Force         = $true
