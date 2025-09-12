@@ -2,17 +2,44 @@
 
 This Terraform performs a quick bootstrap deployment of the necessary resources to test the build and application of the Machine Configuration policy definitions.
 
+## Requirements
+
+Install Az CLI:
+
+```PowerShell
+$ProgressPreference = 'SilentlyContinue'; Invoke-WebRequest -Uri https://aka.ms/installazurecliwindowsx64 -OutFile .\AzureCLI.msi; Start-Process msiexec.exe -Wait -ArgumentList '/I AzureCLI.msi /quiet'; Remove-Item .\AzureCLI.msi
+```
+
+Install Terraform:
+
+```PowerShell
+$TfVersion = "1.13.2"
+mkdir "${Env:ProgramFiles}\terraform"
+Invoke-WebRequest -Uri "https://releases.hashicorp.com/terraform/${TfVersion}/terraform_${TfVersion}_windows_amd64.zip" -OutFile "terraform_${TfVersion}_windows_amd64.zip"
+Expand-Archive -Path "terraform_${TfVersion}_windows_amd64.zip" -DestinationPath "${Env:ProgramFiles}\terraform\."
+
+[Environment]::SetEnvironmentVariable("PATH", "${Env:PATH};${Env:ProgramFiles}\terraform", [EnvironmentVariableTarget]::Machine)
+```
+
 ## Quick Usage
 
-Create an auto.tfvars file with (minimally) the following values defined:
+Create  `bootstrap.auto.tfvars` with (minimally) the following values defined:
 
 ```hcl
 subscription_id     = "00000000-0000-0000-0000-000000000000"
 location            = "eastus"
+workload_name       = "stigmc"
+environment         = "prod"
 ```
 
 Run `terraform apply`.
 
+We can access the resource IDs of the storage account and the user assigned managed identity for use in PowerShell:
+
+```PowerShell
+$StorageAccountContainerResourceId = $(terraform output -raw container_resourceid)
+$ManagedIdentityResourceId = $(terraform output -raw managed_identity_resourceid)
+```
 ## Note
 
 This will create a storage account that will only allow access to the policy author's IP address.

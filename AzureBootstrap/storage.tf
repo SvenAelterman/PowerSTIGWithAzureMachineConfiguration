@@ -5,7 +5,7 @@ module "storage" {
   version          = "~> 0.5.0"
   enable_telemetry = var.enable_telemetry
 
-  name                = lower(replace(replace(local.naming_structure, "{resourceType}", "st"), "-", ""))
+  name                = "${lower(replace(replace(local.naming_structure, "{resourceType}", "st"), "-", ""))}${local.uniqueness}"
   location            = azurerm_resource_group.bootstrap.location
   resource_group_name = azurerm_resource_group.bootstrap.name
   tags                = var.tags
