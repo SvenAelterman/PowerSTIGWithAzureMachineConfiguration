@@ -11,7 +11,7 @@ variable "location" {
 variable "naming_convention" {
   type        = string
   description = "The naming convention to be used for all resources in this deployment."
-  default     = "{workloadName}-{environment}-{resourceType}-{region}-{instance}"
+  default     = "{resourceType}-{workloadName}-{environment}-{region}-{instance}"
 }
 
 locals {
