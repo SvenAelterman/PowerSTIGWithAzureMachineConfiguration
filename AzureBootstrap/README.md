@@ -23,15 +23,23 @@ Expand-Archive -Path "terraform_${TfVersion}_windows_amd64.zip" -DestinationPath
 
 ## Quick Usage
 
-Create an auto.tfvars file with (minimally) the following values defined:
+Create  `bootstrap.auto.tfvars` with (minimally) the following values defined:
 
 ```hcl
 subscription_id     = "00000000-0000-0000-0000-000000000000"
 location            = "eastus"
+workload_name       = "stigmc"
+environment         = "prod"
 ```
 
 Run `terraform apply`.
 
+We can access the resource IDs of the storage account and the user assigned managed identity for use in PowerShell:
+
+```PowerShell
+$StorageAccountContainerResourceId = $(terraform output -raw container_resourceid)
+$ManagedIdentityResourceId = $(terraform output -raw managed_identity_resourceid)
+```
 ## Note
 
 This will create a storage account that will only allow access to the policy author's IP address.
