@@ -152,7 +152,7 @@ In order to simplify our development of policy, we will create a set of skipped 
 Get-SkipMediumLowRules | Set-Clipboard
 ```
 
-Replacing the line `SkipRule   = @()`, paste the code into `$StigXmlBaseName\New-Configuration.ps1`.
+Replacing the line `## SkipRule   = @()`, paste the code into `$StigXmlBaseName\New-Configuration.ps1`.
 
 We are now ready to create the configuration and policy.
 

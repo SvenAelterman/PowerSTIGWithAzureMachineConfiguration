@@ -30,7 +30,7 @@ configuration this
             # The effects of these rules have not been tested against the environment.
             # As rules are validated, the line corresponding to the skipped rule should be commented out.
 
-            SkipRule   = @()
+            ## SkipRule   = @()
             
             # These exceptions must be made because server is not domain joined.
             # DomainName and ForestName are commented out.
