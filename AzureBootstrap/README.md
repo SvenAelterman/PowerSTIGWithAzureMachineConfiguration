@@ -32,6 +32,8 @@ workload_name       = "stigmc"
 environment         = "prod"
 ```
 
+Login via Az CLI: `az login --use-device-code`
+
 Run `terraform apply`.
 
 We can access the resource IDs of the storage account and the user assigned managed identity for use in PowerShell:
