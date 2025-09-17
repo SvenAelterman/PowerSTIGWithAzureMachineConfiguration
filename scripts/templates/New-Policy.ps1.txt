@@ -1,13 +1,7 @@
 [CmdletBinding(DefaultParametersetName="default")]
 param (
     [Parameter()]
-    [string] $ContainerName = 'stig-policy-store',
-
-    [Parameter()]
-    [string] $StorageAcctResourceGroupName = 'StigMC-demo-rg-cnc-01',
-
-    [Parameter()]
-    [string] $StorageAcctName = 'stigmcdemostcnc01',
+    [string] $StorageAccountContainerResourceId,
 
     [Parameter(ParameterSetName="mgt")]
     [string] $ManagementGroupName = "",
@@ -18,6 +12,10 @@ param (
     [Parameter()]
     [string] $ManagedIdentityResourceId = ""
 )
+
+$ContainerName = $storageAccountContainerResourceId.split('/')[12]
+$StorageAcctResourceGroupName = $storageAccountContainerResourceId.split('/')[4]
+$StorageAcctName = $storageAccountContainerResourceId.split('/')[8]
 
 $PolicyDisplayName = "${{PolicyName}} STIG Configuration"
 $PolicyName        = $PolicyDisplayName.Replace(' ', '').Replace('-', '')
