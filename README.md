@@ -153,7 +153,7 @@ In order to simplify our development of policy, we will create a set of skipped 
 ```PowerShell
 # Dot source function
 . .\scripts\helpers\Get-SkipMediumLowRules.ps1
-Get-SkipMediumLowRules | Set-Clipboard
+Get-SkipMediumLowRules -Technology $Technology -TechnologyVersion $TechnologyVersion -TechnologyRole $TechnologyRole -StigVersion $StigVersion | Set-Clipboard
 ```
 
 Replacing the line `## SkipRule   = @()`, paste the code into `$StigXmlBaseName\New-Configuration.ps1`.
@@ -171,6 +171,21 @@ pushd "$StigXmlBaseName"
 $mgIdResourceId = "<resourceid>"
 .\New-Policy.ps1 -ManagedIdentityResourceId "$mgIdResourceId"
 
+```
+
+## **IMPORTANT**
+
+There is an existing bug in the processed xml files for the UserRightsAssignment Rules.
+You will need to run the following fix before creating new configurations.
+
+```PowerShell
+$Technology = "WindowsServer"
+$TechnologyVersion = "2022"
+$TechnologyRole = "MS"
+$StigVersion = "2.4"
+
+. .\scripts\helpers\Set-StigWindowsProcessedXMLPatch.ps1
+Set-StigWindowsProcessedXMLPatch -Technology $Technology -TechnologyVersion $TechnologyVersion -TechnologyRole $TechnologyRole -StigVersion $StigVersion
 ```
 
 ## TODO:
