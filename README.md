@@ -180,12 +180,11 @@ Connect-AzAccount -UseDeviceAuthentication
 
 .\New-Configuration.ps1
 .\New-Package.ps1 -StorageAccountContainerResourceId $StorageAccountContainerResourceId
-.\New-Policy.ps1
+.\New-Policy.ps1-StorageAccountContainerResourceId $StorageAccountContainerResourceId
 
 # alternatively to create an Azure VM only policy, supply the resource id of the user assigned managed identity created by the bootstrap
 $mgIdResourceId = "<resourceid>"
-.\New-Policy.ps1 -ManagedIdentityResourceId "$mgIdResourceId"
-
+.\New-Policy.ps1 -ManagedIdentityResourceId "$mgIdResourceId" -StorageAccountContainerResourceId $StorageAccountContainerResourceId
 ```
 
 ## **IMPORTANT**
