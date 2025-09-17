@@ -114,6 +114,19 @@ $(Get-ChildItem "$($(Get-Module -Name PowerStig -ListAvailable).ModuleBase)\Stig
 
 In this example we will create an Azure Guest Configuration Policy to apply the STIG settings for a Windows 2022 member server
 
+We will need the resource id of the storage account container that hold the Azure guest machine policy resources.
+This can be retrieved from the local Terraform state file.
+
+```PowerShell
+pushd AzureBootstrap
+$StorageAccountContainerResourceId = $(terraform output -raw container_resourceid)
+# We are setting $ManagedIdentityResourceId since we are here already.
+$ManagedIdentityResourceId = $(terraform output -raw managed_identity_resourceid)
+popd
+```
+
+Next we can begin work on the policy.
+
 ```PowerShell
 # Set variables
 $Technology = "WindowsServer"
@@ -163,8 +176,10 @@ We are now ready to create the configuration and policy.
 ```PowerShell
 pushd "$StigXmlBaseName"
 
+Connect-AzAccount -UseDeviceAuthentication
+
 .\New-Configuration.ps1
-.\New-Package.ps1
+.\New-Package.ps1 -StorageAccountContainerResourceId $StorageAccountContainerResourceId
 .\New-Policy.ps1
 
 # alternatively to create an Azure VM only policy, supply the resource id of the user assigned managed identity created by the bootstrap
