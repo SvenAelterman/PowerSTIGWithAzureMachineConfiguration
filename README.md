@@ -123,6 +123,12 @@ $StigVersion = "2.4"
 
 $StigXmlBaseName = "$Technology-$TechnologyVersion-$TechnologyRole-$StigVersion"
 
+# **IMPORTANT**
+# Create a new feature branch for the authored policy
+# All changes will be added to his branch
+git switch -c "feature/$StigXmlBaseName"
+
+
 # Create a folder to hold organization settings
 # This folder should be tracked in a repository
 
