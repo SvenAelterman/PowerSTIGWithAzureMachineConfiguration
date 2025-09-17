@@ -1,14 +1,12 @@
 [CmdletBinding()]
 param (
     [Parameter()]
-    [string] $ContainerName = 'stig-policy-store',
-
-    [Parameter()]
-    [string] $StorageAcctResourceGroupName = 'StigMC-demo-rg-cnc-01',
-
-    [Parameter()]
-    [string] $StorageAcctName = 'stigmcdemostcnc01'
+    [string] $StorageAccountContainerResourceId
 )
+
+$ContainerName = $storageAccountContainerResourceId.split('/')[12]
+$StorageAcctResourceGroupName = $storageAccountContainerResourceId.split('/')[4]
+$StorageAcctName = $storageAccountContainerResourceId.split('/')[8]
 
 $MetaData = Get-Content -Path './metadata.jsonc' | ConvertFrom-Json
 [string]$Version = $MetaData.version
