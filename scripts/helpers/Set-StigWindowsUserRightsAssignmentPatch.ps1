@@ -6,7 +6,7 @@ $UserRightsAssignmentRules = @(
     ,"V-254506"
 )
 
-function Set-StigWindowsProcessedXMLPatch {
+function Set-StigWindowsUserRightsAssignmentPatch {
     [CmdletBinding()]
 
     param (
