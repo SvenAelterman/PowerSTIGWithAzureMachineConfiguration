@@ -1,11 +1,3 @@
-$UserRightsAssignmentRules = @(
-    "V-254440"
-    ,"V-254491"
-    ,"V-254492"
-    ,"V-254496"
-    ,"V-254506"
-)
-
 function Set-StigWindowsUserRightsAssignmentPatch {
     [CmdletBinding()]
 
@@ -25,15 +17,30 @@ function Set-StigWindowsUserRightsAssignmentPatch {
 
     $powerStigModuleDir = $(Get-Module -Name PowerSTIG -ListAvailable).ModuleBase
     $ReleasedStigXML = "$powerStigModuleDir\StigData\Processed\$Technology-$TechnologyVersion-$TechnologyRole-$StigVersion.xml"
-    @("${ReleasedStigXML}.backup") |  % {if (!(Test-Path -Path "$_")) {Copy-Item -Path "$ReleasedStigXML" -Destination "$_"}}
+    Write-Verbose -Message $("Using upstream processed XML: {0}" -f $ReleasedStigXML)
+    
+    @("${ReleasedStigXML}.backup") |  % {
+        if (!(Test-Path -Path "$_")) {
+            Copy-Item -Path "$ReleasedStigXML" -Destination "$_"
+            Write-Verbose -Message $("Created backup of released XML: {0}" -f "$_")
+        } else {
+            Write-Verbose -Message "Backup of released XML already done"
+        }
+    }
 
     [xml] $stig = Get-Content -Path "$ReleasedStigXML"
 
-    $UserRightsAssignmentRules | ForEach-Object {
-        $RuleId = $_
-        $RuleElement = $stig.DISASTIG.UserRightRule.Rule | Where-Object { ( $_.id -eq $RuleId ) }
-        $RuleElement.Identity = ""
-        $RuleElement.IsNullOrEmpty = "True"
+    $ToBeFixedRules = $stig.DISASTIG.UserRightRule.Rule | Where-Object { (( $_.Identity -eq 'NULL' ) -or ( $_.Identity -eq '' ))}
+    
+    if ($PSCmdlet.MyInvocation.BoundParameters["Verbose"].IsPresent) {
+        $ToBeFixedRules | Format-Table -Property id, DisplayName, Identity, IsNullOrEmpty
+    }
+
+    $ToBeFixedRules | ForEach-Object {
+        $_.Identity = ''
+        Write-Verbose -Message $("Set <Identity/> element for {0} to empty string" -f $_.id)
+        $_.IsNullOrEmpty = 'True'
+        Write-Verbose -Message $("Set <IsNullOrEmpty/> element for {0} to True" -f $_.id)
     }
 
     $stig.Save("$ReleasedStigXML")
