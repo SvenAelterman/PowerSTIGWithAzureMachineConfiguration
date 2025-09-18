@@ -208,8 +208,8 @@ $TechnologyVersion = "2022"
 $TechnologyRole = "MS"
 $StigVersion = "2.4"
 
-. .\scripts\helpers\Set-StigWindowsProcessedXMLPatch.ps1
-Set-StigWindowsProcessedXMLPatch -Technology $Technology -TechnologyVersion $TechnologyVersion -TechnologyRole $TechnologyRole -StigVersion $StigVersion
+. .\scripts\helpers\Set-StigWindowsUserRightsAssignmentPatch.ps1
+Set-StigWindowsUserRightsAssignmentPatch -Technology $Technology -TechnologyVersion $TechnologyVersion -TechnologyRole $TechnologyRole -StigVersion $StigVersion
 ```
 
 ## TODO:
